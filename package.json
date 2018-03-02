@@ -1,0 +1,40 @@
+{
+  "name": "etwp-empty-files-demo",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack -p --progress --colors",
+    "clean": "rimraf dist",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --progress --colors",
+    "prebuild": "npm run clean"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/preset-env": "^7.0.0-beta.40",
+    "@babel/preset-react": "^7.0.0-beta.40",
+    "@babel/preset-stage-3": "^7.0.0-beta.40",
+    "babel-eslint": "^8.2.2",
+    "babel-loader": "^8.0.0-beta.2",
+    "cross-env": "^5.1.3",
+    "css-loader": "^0.28.10",
+    "eslint": "^4.18.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-webpack-plugin": "^3.0.4",
+    "prettier": "^1.11.1",
+    "rimraf": "^2.6.2",
+    "style-loader": "^0.20.2",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.10",
+    "webpack-dev-server": "^3.1.0"
+  },
+  "private": true
+}
