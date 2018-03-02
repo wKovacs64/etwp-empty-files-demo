@@ -35,6 +35,6 @@ module.exports = {
       chunksSortMode: 'dependency',
       inject: 'body',
     }),
-    new ExtractTextPlugin({ filename: '[name].css' }),
+    new ExtractTextPlugin({ filename: '[name].css', allChunks: true }),
   ],
 };
